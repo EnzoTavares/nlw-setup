@@ -29,7 +29,7 @@ function save() {
 //   work: ["01-02"],
 // }
 
-const data = JSON.parse(localStorage.getItem("nlwSetup@habits"))
+const data = JSON.parse(localStorage.getItem("nlwSetup@habits")) || {}
 
 nlwSetup.setData(data)
 nlwSetup.load()
